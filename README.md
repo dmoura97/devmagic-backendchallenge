@@ -13,6 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Typescript](https://www.typescriptlang.org/)
 - [Express](https://expressjs.com/pt-br/)
 - [Express Async Errors](https://www.npmjs.com/package/express-async-errors)
+- [Eslint](https://eslint.org/)
 - [Postgres](https://www.postgresql.org/)
 - [Typeorm](https://typeorm.io/#/)
 - [Axios](https://github.com/axios/axios)
