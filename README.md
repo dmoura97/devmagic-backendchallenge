@@ -154,6 +154,6 @@ Response:
   "message": "sucessfully deleted"
 }
 ```
-<p align="center">Desenvolvido com ❤️ por Danilo Moura.</p>
+<p align="center">Desenvolvido por Danilo Moura.</p>
 
 
