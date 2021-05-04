@@ -13,7 +13,7 @@ class DeletePlayerController {
       player_id: id,
     });
 
-    return response.status(200).json({ message: "successfully" });
+    return response.status(200).json({ message: "successfully deleted" });
   }
 }
 

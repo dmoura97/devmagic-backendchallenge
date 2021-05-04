@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
 
 import { AppError } from "../../../../errors/AppError";
-import { IPlayersRepositories } from "../../repositories/IPlayersRepository";
+import { IPlayersRepository } from "../../repositories/IPlayersRepository";
 
 interface IRequest {
   player_id: string;
@@ -11,7 +11,7 @@ interface IRequest {
 class DeletePlayerUseCase {
   constructor(
     @inject("PlayersRepository")
-    private playersRepositories: IPlayersRepositories
+    private playersRepositories: IPlayersRepository
   ) {}
 
   async execute({ player_id }: IRequest): Promise<void> {

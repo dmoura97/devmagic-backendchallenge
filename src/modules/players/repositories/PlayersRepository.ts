@@ -1,9 +1,9 @@
 import { getRepository, Repository } from "typeorm";
 
 import { Player } from "../entities/Player";
-import { ICreatePlayerDTO, IPlayersRepositories } from "./IPlayersRepository";
+import { ICreatePlayerDTO, IPlayersRepository } from "./IPlayersRepository";
 
-class PlayersRepository implements IPlayersRepositories {
+class PlayersRepository implements IPlayersRepository {
   private repository: Repository<Player>;
 
   constructor() {

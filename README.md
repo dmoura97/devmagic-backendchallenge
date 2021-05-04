@@ -24,16 +24,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 🚧 Requerido! Instalar [git](https://git-scm.com/), [docker](https://www.docker.com/), [node](https://nodejs.org/en/) e [yarn](https://yarnpkg.com/) (ou npm).
 
 ```bash
-# Clone Repositorio
+# Clone Repositório
 $ git clone https://github.com/dmoura97/devmagic-backendchallenge
 
 # Ir para a pasta do projeto
 $ cd devmagic-backendchallenge
 
-# Instalar dependecias
+# Instalar dependências
 $ yarn
 
-# Inicar aplicação
+# Iniciar aplicação
 $ docker-compose up -d
 $ yarn typeorm migration:run
 

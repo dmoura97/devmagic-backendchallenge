@@ -1,13 +1,13 @@
 import { inject, injectable } from "tsyringe";
 
 import { Player } from "../../entities/Player";
-import { IPlayersRepositories } from "../../repositories/IPlayersRepository";
+import { IPlayersRepository } from "../../repositories/IPlayersRepository";
 
 @injectable()
 class ListPlayersUseCase {
   constructor(
     @inject("PlayersRepository")
-    private playersRepository: IPlayersRepositories
+    private playersRepository: IPlayersRepository
   ) {}
 
   async execute(): Promise<Player[]> {

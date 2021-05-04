@@ -9,7 +9,7 @@ interface ICreatePlayerDTO {
   summonerId: string;
 }
 
-interface IPlayersRepositories {
+interface IPlayersRepository {
   findByNickName(nickname: string): Promise<Player>;
   findBySummonerId(summonerId: string): Promise<Player>;
   findById(id: string): Promise<Player>;
@@ -25,4 +25,4 @@ interface IPlayersRepositories {
   delete(player: ICreatePlayerDTO): Promise<void>;
 }
 
-export { IPlayersRepositories, ICreatePlayerDTO };
+export { IPlayersRepository, ICreatePlayerDTO };

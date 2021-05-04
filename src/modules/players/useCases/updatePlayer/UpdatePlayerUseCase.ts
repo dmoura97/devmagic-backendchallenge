@@ -2,7 +2,7 @@ import { inject, injectable } from "tsyringe";
 
 import { AppError } from "../../../../errors/AppError";
 import { Player } from "../../entities/Player";
-import { IPlayersRepositories } from "../../repositories/IPlayersRepository";
+import { IPlayersRepository } from "../../repositories/IPlayersRepository";
 
 interface IRequest {
   player_id: string;
@@ -14,7 +14,7 @@ interface IRequest {
 class UpdatePlayerUseCase {
   constructor(
     @inject("PlayersRepository")
-    private playersRepository: IPlayersRepositories
+    private playersRepository: IPlayersRepository
   ) {}
 
   async execute({

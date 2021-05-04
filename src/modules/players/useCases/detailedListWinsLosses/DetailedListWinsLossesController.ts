@@ -39,9 +39,6 @@ class DetailedListWinsLossesController {
         totalLosses,
       });
 
-      // console.log(totalWins);
-      // console.log(totallosses);
-
       return response.status(200).json(playerDetails);
     } catch (error) {
       return response.status(400).json({ error: "Player does not exists!" });
