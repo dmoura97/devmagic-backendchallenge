@@ -129,6 +129,17 @@ Response:
   "wins": 37,
   "losses": 27
 }
+
+#Rota para Deletar jogador.
+
+Possui uma rota DELETE para apgar o jogador através do ID:
+
+Base_url: http://localhost:3333/players/delete/:id
+
+Response: 
+{
+  "message": "sucessfully deleted"
+}
 ```
 <p align="center">Desenvolvido com ❤️ por Danilo Moura.</p>
 
