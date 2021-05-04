@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
 
+import auth from "../../../../config/token";
 import { api } from "../../../../services/api";
 import { CreatePlayerUseCase } from "./CreatePlayerUseCase";
 
@@ -19,7 +20,7 @@ class CreatePlayerController {
     const { summonerName } = request.body;
 
     const { data }: IData = await api.get(
-      `lol/summoner/v4/summoners/by-name/${summonerName}?api_key=RGAPI-b60c19fa-3949-4176-92bd-0fbddaac046c`
+      `lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${auth.authorization.token}`
     );
 
     const createPlayerUseCase = container.resolve(CreatePlayerUseCase);

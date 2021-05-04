@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
 
+import auth from "../../../../config/token";
 import { api } from "../../../../services/api";
 import { DetailedListWinsLossesUseCase } from "./DetailedListWinsLossesUseCase";
 
@@ -19,7 +20,7 @@ class DetailedListWinsLossesController {
       let totalLosses = 0;
 
       const { data } = await api.get(
-        `lol/league/v4/entries/by-summoner/${id}?api_key=RGAPI-74157b29-d0e3-4b29-8e3b-1605ff332553
+        `lol/league/v4/entries/by-summoner/${id}?api_key=${auth.authorization.token}
         `
       );
 

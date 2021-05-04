@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <h2 id="utilizar"> 👷 Como Utilizar </h2>
 
-🚧 Requerido! Instalar git, docker, node e yarn (ou npm).
+🚧 Requerido! Instalar [git](https://git-scm.com/), [docker](https://www.docker.com/), [node](https://nodejs.org/en/) e [yarn](https://yarnpkg.com/) (ou npm).
 
 ```bash
 # Clone Repositorio
@@ -34,20 +34,32 @@ $ cd devmagic-backendchallenge
 $ yarn
 
 # Inicar aplicação
-$ docker-compose create
-$ docker-compose start
+$ docker-compose up -d
+$ yarn typeorm migration:run
+
+# Conectando no banco
+Ferramentas beekeeper ou DBeaver
+Login: docker
+Senha: docker
+  - Caso esteja usando o beekeeper criar por default a database com nome de devmagic
 
 # Problemas com a porta 3333
 Caso a porta estiver em uso, encerrar a aplicação na qual está em uso, ou se preferir trocar a porta no arquivo docker-compose.yml
 
 # Para visualizar se está rodando
 $ docker logs riot -f   
+No seu terminal mostrará a seguinte mensagem: "🚀 Server is Running!"
 ```
 <h2 id="rotas">📍 Rotas da aplicação</h2>
 
 Utilizar ferramentas para requisições de API.</br>
 - [Insomnia](https://insomnia.rest/download)
 - [Postman](https://www.postman.com/)
+
+Antes de realizar as Request, verifique o token na pasta config.
+Caso esteja expirado as requisições ocorrerá erro.
+Para refresh do seu token acesse: [Api da riot Games](https://developer.riotgames.com/)<br>
+Copie e cole onde está o token antigo!
 
 ```bash
 #Rota para criação de jogador
