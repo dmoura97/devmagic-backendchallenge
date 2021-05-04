@@ -9,15 +9,15 @@ O desafio consiste em construir uma Api Rest que seja capaz de cadastrar, buscar
 <h2>🚀 Tecnologias</h2>
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Nodejs]()
-- [Typescript]()
-- [Express]()
-- [Express Async Errors]()
-- [Postgres]()
-- [Typeorm]()
-- [Axios]()
-- [Tsyringe]()
-- [Docker]()
+- [Nodejs](https://nodejs.org/en/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Express](https://expressjs.com/pt-br/)
+- [Express Async Errors](https://www.npmjs.com/package/express-async-errors)
+- [Postgres](https://www.postgresql.org/)
+- [Typeorm](https://typeorm.io/#/)
+- [Axios](https://github.com/axios/axios)
+- [Tsyringe](https://www.npmjs.com/package/tsyringe)
+- [Docker](https://www.docker.com/)
 
 <h2 id="utilizar"> 👷 Como Utilizar </h2>
 
@@ -25,10 +25,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ```bash
 # Clone Repositorio
-$ git clone https://github.com/anabrtorres/timeup-nlw4.git
+$ git clone https://github.com/dmoura97/devmagic-backendchallenge
 
 # Ir para a pasta do projeto
-$ cd timeup
+$ cd devmagic-backendchallenge
 
 # Instalar dependecias
 $ yarn
@@ -45,9 +45,9 @@ $ docker logs riot -f
 ```
 <h2 id="rotas">📍 Rotas da aplicação</h2>
 
-Utilizar ferramentas para requisições da API.</br>
-- [Insomnia]()
-- [Postman]()
+Utilizar ferramentas para requisições de API.</br>
+- [Insomnia](https://insomnia.rest/download)
+- [Postman](https://www.postman.com/)
 
 ```bash
 #Rota para criação de jogador
